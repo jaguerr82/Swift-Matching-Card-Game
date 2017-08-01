@@ -24,10 +24,21 @@ struct Game {
     mutating func flipCard(atIndexnumber index: Int) -> Bool {
         if unmatchedCardsRevealed.count < 2 {
             unmatchedCardsRevealed.append(index)
+            
+            if unmatchedCardsRevealed.count == 2 {
+                let card1Name = deckOfCards.dealtCards[unmatchedCardsRevealed[0]]
+                let card2Name = deckOfCards.dealtCards[unmatchedCardsRevealed[1]]
+            
+                if card1Name == card2Name {
+                    print("MATCH!")
+                }
+            }
+        
             return true
         } else {
                 resetUnmatchedCards()
             return false
+            
         }
         
     }
