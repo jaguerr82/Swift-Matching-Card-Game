@@ -7,32 +7,45 @@
 //
 
 import UIKit
+import LTMorphingLabel
 
 class GameViewController: UIViewController, MatchingGameDelegate {
-    
+    @IBOutlet weak var practiceMorphLabel: LTMorphingLabel!
     @IBOutlet weak var cardButton: UIButton!
     
+    var counter = 1
     var game = Game()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         game.gameDelegate = self
+        practiceMorphLabel.morphingEffect = .burn
     }
     
     @IBAction func cardTapped(_ sender: UIButton) {
         let tagNum = sender.tag
         if game.flipCard(atIndexnumber: tagNum - 1) {
             let thisImage = UIImage(named: game.deckOfCards.dealtCards[tagNum - 1])
-            sender.setBackgroundImage(thisImage, for: .normal)
+            
+            
+            UIView.transition(with: sender, duration: 1.0, options: .transitionFlipFromTop, animations: {
+             sender.setImage(thisImage, for: .normal)
+            }, completion: nil)
             
             game.speakCard(number: tagNum - 1)
         }
     }
     
     @IBAction func newGame(_ sender: UIButton) {
+        
+        practiceMorphLabel.morphingEffect = .burn
+        practiceMorphLabel.text = game.deckOfCards.dealtCards[counter]
+        counter += 1
+        counter %= game.deckOfCards.dealtCards.count
+        
         for tagNum in 1...12 {
             if let thisButton = self.view.viewWithTag(tagNum) as? UIButton {
-                thisButton.setBackgroundImage(#imageLiteral(resourceName: "CardBack"), for: .normal)
+                thisButton.setImage(#imageLiteral(resourceName: "CardBack"), for: .normal)
             }
             
         }
@@ -42,7 +55,7 @@ class GameViewController: UIViewController, MatchingGameDelegate {
     func game(_ game: Game, hideCards cards: [Int]) {
         for cardIndex in cards {
             if let thisButton = self.view.viewWithTag(cardIndex + 1) as? UIButton {
-                thisButton.setBackgroundImage(#imageLiteral(resourceName: "CardBack"), for: .normal)
+                thisButton.setImage(#imageLiteral(resourceName: "CardBack"), for: .normal)
                 
                 
             }
