@@ -32,7 +32,6 @@ class GameViewController: UIViewController, MatchingGameDelegate {
              sender.setImage(thisImage, for: .normal)
             }, completion: nil)
             
-            game.speakCard(number: tagNum - 1)
         }
     }
     
@@ -50,6 +49,11 @@ class GameViewController: UIViewController, MatchingGameDelegate {
             
         }
         game.deckOfCards.drawCards()
+//        gameNumber += 1
+//        gameLabel.text = "Game #\(gameNumber)"
+        
+        game.newGame()
+        
     }
     
     func game(_ game: Game, hideCards cards: [Int]) {
