@@ -15,6 +15,8 @@ class GameViewController: UIViewController, MatchingGameDelegate {
     
     var counter = 1
     var game = Game()
+    var gameNumber = 1
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +30,7 @@ class GameViewController: UIViewController, MatchingGameDelegate {
             let thisImage = UIImage(named: game.deckOfCards.dealtCards[tagNum - 1])
             
             
-            UIView.transition(with: sender, duration: 1.0, options: .transitionFlipFromTop, animations: {
+            UIView.transition(with: sender, duration: 0.5, options: .transitionFlipFromTop, animations: {
              sender.setImage(thisImage, for: .normal)
             }, completion: nil)
             
@@ -36,21 +38,18 @@ class GameViewController: UIViewController, MatchingGameDelegate {
     }
     
     @IBAction func newGame(_ sender: UIButton) {
-        
-        practiceMorphLabel.morphingEffect = .burn
-        practiceMorphLabel.text = game.deckOfCards.dealtCards[counter]
-        counter += 1
-        counter %= game.deckOfCards.dealtCards.count
-        
         for tagNum in 1...12 {
             if let thisButton = self.view.viewWithTag(tagNum) as? UIButton {
-                thisButton.setImage(#imageLiteral(resourceName: "CardBack"), for: .normal)
+                                
+                UIView.transition(with: thisButton, duration: 0.5, options: .transitionFlipFromTop, animations: {
+                    thisButton.setImage(#imageLiteral(resourceName: "CardBack"), for: .normal)
+                }, completion: nil)
             }
             
         }
-        game.deckOfCards.drawCards()
-//        gameNumber += 1
-//        gameLabel.text = "Game #\(gameNumber)"
+        
+        gameNumber += 1
+        practiceMorphLabel.text = "Game #\(gameNumber)"
         
         game.newGame()
         

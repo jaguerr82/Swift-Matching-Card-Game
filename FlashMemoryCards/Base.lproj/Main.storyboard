@@ -32,7 +32,6 @@
                                                 <rect key="frame" x="0.5" y="0.0" width="75.5" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="vt0-DU-RQ6" secondAttribute="height" multiplier="3:2" id="LBD-Q4-rlQ"/>
-                                                    <constraint firstAttribute="width" secondItem="vt0-DU-RQ6" secondAttribute="height" multiplier="3:2" id="oua-Fv-z4H"/>
                                                     <constraint firstAttribute="height" constant="50" id="pBi-rK-Zht"/>
                                                 </constraints>
                                                 <state key="normal" image="CardBack"/>
@@ -44,7 +43,6 @@
                                                 <rect key="frame" x="86" y="0.0" width="75.5" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="r9G-3q-kvi" secondAttribute="height" multiplier="3:2" id="LHs-3k-iiY"/>
-                                                    <constraint firstAttribute="width" secondItem="r9G-3q-kvi" secondAttribute="height" multiplier="3:2" id="cye-69-dNw"/>
                                                 </constraints>
                                                 <state key="normal" image="CardBack"/>
                                                 <connections>
@@ -55,7 +53,6 @@
                                                 <rect key="frame" x="171.5" y="0.0" width="75.5" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Adm-oY-9vq" secondAttribute="height" multiplier="3:2" id="5Zo-Uo-ixc"/>
-                                                    <constraint firstAttribute="width" secondItem="Adm-oY-9vq" secondAttribute="height" multiplier="3:2" id="nAQ-mt-sQM"/>
                                                 </constraints>
                                                 <state key="normal" image="CardBack"/>
                                                 <connections>
@@ -64,10 +61,7 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="Adm-oY-9vq" firstAttribute="width" secondItem="Adm-oY-9vq" secondAttribute="height" multiplier="3:2" id="EoQ-4g-jYX"/>
-                                            <constraint firstItem="r9G-3q-kvi" firstAttribute="width" secondItem="r9G-3q-kvi" secondAttribute="height" multiplier="3:2" id="M5V-a6-BnF"/>
                                             <constraint firstAttribute="width" secondItem="UgF-qp-gsP" secondAttribute="height" multiplier="123:25" id="PnJ-zj-Ps3"/>
-                                            <constraint firstItem="Adm-oY-9vq" firstAttribute="width" secondItem="Adm-oY-9vq" secondAttribute="height" multiplier="3:2" id="ocq-t2-fGx"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oUR-c7-rny">
@@ -77,7 +71,6 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="75.5" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="VQB-ID-NUk" secondAttribute="height" multiplier="3:2" id="0je-nk-dyC"/>
-                                                    <constraint firstAttribute="width" secondItem="VQB-ID-NUk" secondAttribute="height" multiplier="3:2" id="MSl-Cx-Jwj"/>
                                                 </constraints>
                                                 <state key="normal" image="CardBack"/>
                                                 <connections>
@@ -88,7 +81,6 @@
                                                 <rect key="frame" x="85.5" y="0.0" width="75.5" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="2as-8p-6Kk" secondAttribute="height" multiplier="3:2" id="Eeg-E5-NhR"/>
-                                                    <constraint firstAttribute="width" secondItem="2as-8p-6Kk" secondAttribute="height" multiplier="3:2" id="fdp-ZS-Kl9"/>
                                                 </constraints>
                                                 <state key="normal" image="CardBack"/>
                                                 <connections>
@@ -99,7 +91,6 @@
                                                 <rect key="frame" x="171" y="0.0" width="75.5" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="AAl-Co-2Ym" secondAttribute="height" multiplier="3:2" id="rTe-dq-Pp9"/>
-                                                    <constraint firstAttribute="width" secondItem="AAl-Co-2Ym" secondAttribute="height" multiplier="3:2" id="vEN-K8-U6B"/>
                                                 </constraints>
                                                 <state key="normal" image="CardBack"/>
                                                 <connections>
@@ -108,10 +99,7 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="2as-8p-6Kk" firstAttribute="width" secondItem="2as-8p-6Kk" secondAttribute="height" multiplier="3:2" id="1Di-6Y-nRe"/>
                                             <constraint firstAttribute="width" secondItem="oUR-c7-rny" secondAttribute="height" multiplier="123:25" id="28g-Dq-l3P"/>
-                                            <constraint firstItem="AAl-Co-2Ym" firstAttribute="width" secondItem="AAl-Co-2Ym" secondAttribute="height" multiplier="3:2" id="HgX-S5-ofj"/>
-                                            <constraint firstItem="AAl-Co-2Ym" firstAttribute="width" secondItem="AAl-Co-2Ym" secondAttribute="height" multiplier="3:2" id="bGN-SE-GGb"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Bek-wk-MIj">
@@ -122,7 +110,6 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="39I-mR-adh" secondAttribute="height" multiplier="3:2" id="JYI-3w-FaD"/>
                                                     <constraint firstAttribute="height" constant="50" id="dq2-fJ-SsO"/>
-                                                    <constraint firstAttribute="width" secondItem="39I-mR-adh" secondAttribute="height" multiplier="3:2" id="wVV-sh-Dme"/>
                                                 </constraints>
                                                 <state key="normal" image="CardBack"/>
                                                 <connections>
@@ -133,7 +120,6 @@
                                                 <rect key="frame" x="86" y="0.0" width="75.5" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="zA9-n6-AWa" secondAttribute="height" multiplier="3:2" id="AFX-e2-wae"/>
-                                                    <constraint firstAttribute="width" secondItem="zA9-n6-AWa" secondAttribute="height" multiplier="3:2" id="R6S-Mt-5ng"/>
                                                 </constraints>
                                                 <state key="normal" image="CardBack"/>
                                                 <connections>
@@ -152,8 +138,6 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="zA9-n6-AWa" firstAttribute="width" secondItem="zA9-n6-AWa" secondAttribute="height" multiplier="3:2" id="7jK-Je-hc0"/>
-                                            <constraint firstItem="oRb-OO-PHv" firstAttribute="width" secondItem="oRb-OO-PHv" secondAttribute="height" multiplier="3:2" id="ECI-D1-Nbl"/>
                                             <constraint firstAttribute="width" secondItem="Bek-wk-MIj" secondAttribute="height" multiplier="123:25" id="ggM-0w-53n"/>
                                         </constraints>
                                     </stackView>
@@ -161,7 +145,7 @@
                                         <rect key="frame" x="24" y="180" width="246.5" height="50"/>
                                         <subviews>
                                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92h-aM-B9P">
-                                                <rect key="frame" x="0.5" y="0.0" width="75.5" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="75.5" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="92h-aM-B9P" secondAttribute="height" multiplier="3:2" id="2f0-C2-EsR"/>
                                                     <constraint firstAttribute="width" secondItem="92h-aM-B9P" secondAttribute="height" multiplier="3:2" id="mTL-7r-Tr1"/>
@@ -172,7 +156,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqv-JX-oJO">
-                                                <rect key="frame" x="86" y="0.0" width="75.5" height="50"/>
+                                                <rect key="frame" x="85.5" y="0.0" width="75.5" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Bqv-JX-oJO" secondAttribute="height" multiplier="3:2" id="2VO-3l-gZq"/>
                                                     <constraint firstAttribute="width" secondItem="Bqv-JX-oJO" secondAttribute="height" multiplier="3:2" id="eOa-Gd-GBJ"/>
@@ -183,7 +167,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7t-E8-hdG">
-                                                <rect key="frame" x="171.5" y="0.0" width="75.5" height="50"/>
+                                                <rect key="frame" x="171" y="0.0" width="75.5" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="R7t-E8-hdG" secondAttribute="height" multiplier="3:2" id="Qei-xK-uJs"/>
                                                 </constraints>
@@ -195,12 +179,12 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="R7t-E8-hdG" firstAttribute="width" secondItem="R7t-E8-hdG" secondAttribute="height" multiplier="3:2" id="8mH-Ra-8YR"/>
-                                            <constraint firstAttribute="width" secondItem="16X-vw-NT8" secondAttribute="height" multiplier="123:25" id="Oq0-ea-Idl"/>
+                                            <constraint firstAttribute="width" secondItem="16X-vw-NT8" secondAttribute="height" multiplier="123:25" id="EAm-4h-9ct"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hz3-6J-zxH" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game #1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hz3-6J-zxH" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
                                 <rect key="frame" x="65" y="28" width="245" height="48"/>
                                 <fontDescription key="fontDescription" name="Herculanum" family="Herculanum" pointSize="18"/>
                                 <nil key="textColor"/>

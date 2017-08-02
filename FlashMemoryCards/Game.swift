@@ -46,6 +46,7 @@ struct Game {
     }
     mutating func newGame() {
         playShuffleSound()
+        deckOfCards.drawCards()
     }
     
     mutating func resetUnmatchedCards() {
