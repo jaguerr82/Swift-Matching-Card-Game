@@ -29,23 +29,20 @@ class GameViewController: UIViewController, MatchingGameDelegate {
         if game.flipCard(atIndexnumber: tagNum - 1) {
             let thisImage = UIImage(named: game.deckOfCards.dealtCards[tagNum - 1])
             
-            
             UIView.transition(with: sender, duration: 0.5, options: .transitionFlipFromTop, animations: {
-             sender.setImage(thisImage, for: .normal)
+                sender.setImage(thisImage, for: .normal)
             }, completion: nil)
-            
         }
     }
     
     @IBAction func newGame(_ sender: UIButton) {
         for tagNum in 1...12 {
             if let thisButton = self.view.viewWithTag(tagNum) as? UIButton {
-                                
+                
                 UIView.transition(with: thisButton, duration: 0.5, options: .transitionFlipFromTop, animations: {
                     thisButton.setImage(#imageLiteral(resourceName: "CardBack"), for: .normal)
                 }, completion: nil)
             }
-            
         }
         
         gameNumber += 1
@@ -56,18 +53,22 @@ class GameViewController: UIViewController, MatchingGameDelegate {
     }
     
     func game(_ game: Game, hideCards cards: [Int]) {
-        for cardIndex in cards {
-            if let thisButton = self.view.viewWithTag(cardIndex + 1) as? UIButton {
-                thisButton.setImage(#imageLiteral(resourceName: "CardBack"), for: .normal)
-                
-                
+        
+        let delayTime = DispatchTime.now() + Double(Int64(1 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
+        DispatchQueue.main.asyncAfter(deadline: delayTime) {
+            for cardIndex in cards {
+                if let thisButton = self.view.viewWithTag(cardIndex + 1) as? UIButton {
+                 
+                    UIView.transition(with: thisButton, duration: 0.5, options: .transitionFlipFromBottom, animations: {
+                        thisButton.setImage(#imageLiteral(resourceName: "CardBack"), for: .normal)
+                    }, completion: nil)
+                    
+                    
+                }
             }
+            self.game.waitingForHidingCards = false //All unmatched crds are hidden
         }
-        
-        
     }
-    
-    
 }
 
 

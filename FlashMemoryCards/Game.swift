@@ -19,10 +19,15 @@ struct Game {
     let synthesizer = AVSpeechSynthesizer()
     var gameDelegate: MatchingGameDelegate?
     var sound = AVAudioPlayer()
+    var waitingForHidingCards = false
+    
     
     var unmatchedCardsRevealed: [Int] = []
     
     mutating func flipCard(atIndexnumber index: Int) -> Bool {
+        
+        if waitingForHidingCards {return false}
+        if !unmatchedCardsRevealed.isEmpty && unmatchedCardsRevealed[0] == index {return false}
         if unmatchedCardsRevealed.count < 2 {
             unmatchedCardsRevealed.append(index)
             
@@ -30,15 +35,18 @@ struct Game {
                 let card1Name = deckOfCards.dealtCards[unmatchedCardsRevealed[0]]
                 let card2Name = deckOfCards.dealtCards[unmatchedCardsRevealed[1]]
                 
-                if card1Name == card2Name {
+                if card1Name == card2Name { //2nd card is a match
                     self.speakCard(number: index)
+                    unmatchedCardsRevealed.removeAll()
+                } else {                    //2nd card is not a match
+                    resetUnmatchedCards()
                 }
             }
             playRevealSound()
             
             return true
         } else {
-            resetUnmatchedCards()
+            print("ERROR: This should never be here")
             return false
             
         }
@@ -50,6 +58,7 @@ struct Game {
     }
     
     mutating func resetUnmatchedCards() {
+        waitingForHidingCards = true //To be reset in the hideCards method
         self.gameDelegate?.game(self, hideCards: unmatchedCardsRevealed)
         unmatchedCardsRevealed.removeAll()
     }

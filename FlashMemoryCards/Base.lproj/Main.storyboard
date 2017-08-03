@@ -68,7 +68,7 @@
                                         <rect key="frame" x="24" y="60" width="246.5" height="50"/>
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQB-ID-NUk">
-                                                <rect key="frame" x="0.0" y="0.0" width="75.5" height="50"/>
+                                                <rect key="frame" x="0.5" y="0.0" width="75.5" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="VQB-ID-NUk" secondAttribute="height" multiplier="3:2" id="0je-nk-dyC"/>
                                                 </constraints>
@@ -78,7 +78,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2as-8p-6Kk">
-                                                <rect key="frame" x="85.5" y="0.0" width="75.5" height="50"/>
+                                                <rect key="frame" x="86" y="0.0" width="75.5" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="2as-8p-6Kk" secondAttribute="height" multiplier="3:2" id="Eeg-E5-NhR"/>
                                                 </constraints>
@@ -88,7 +88,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAl-Co-2Ym">
-                                                <rect key="frame" x="171" y="0.0" width="75.5" height="50"/>
+                                                <rect key="frame" x="171.5" y="0.0" width="75.5" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="AAl-Co-2Ym" secondAttribute="height" multiplier="3:2" id="rTe-dq-Pp9"/>
                                                 </constraints>
@@ -148,7 +148,6 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="75.5" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="92h-aM-B9P" secondAttribute="height" multiplier="3:2" id="2f0-C2-EsR"/>
-                                                    <constraint firstAttribute="width" secondItem="92h-aM-B9P" secondAttribute="height" multiplier="3:2" id="mTL-7r-Tr1"/>
                                                 </constraints>
                                                 <state key="normal" image="CardBack"/>
                                                 <connections>
@@ -159,7 +158,6 @@
                                                 <rect key="frame" x="85.5" y="0.0" width="75.5" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Bqv-JX-oJO" secondAttribute="height" multiplier="3:2" id="2VO-3l-gZq"/>
-                                                    <constraint firstAttribute="width" secondItem="Bqv-JX-oJO" secondAttribute="height" multiplier="3:2" id="eOa-Gd-GBJ"/>
                                                 </constraints>
                                                 <state key="normal" image="CardBack"/>
                                                 <connections>
@@ -178,7 +176,6 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="R7t-E8-hdG" firstAttribute="width" secondItem="R7t-E8-hdG" secondAttribute="height" multiplier="3:2" id="8mH-Ra-8YR"/>
                                             <constraint firstAttribute="width" secondItem="16X-vw-NT8" secondAttribute="height" multiplier="123:25" id="EAm-4h-9ct"/>
                                         </constraints>
                                     </stackView>
@@ -203,15 +200,15 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lij-0T-Bub" customClass="PMSuperButton" customModule="PMSuperButton">
-                                <rect key="frame" x="150" y="352" width="75" height="35"/>
+                                <rect key="frame" x="132" y="352" width="115" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="lij-0T-Bub" secondAttribute="height" multiplier="15:7" id="U6g-dV-GXk"/>
-                                    <constraint firstAttribute="width" constant="75" id="tph-iL-g5W"/>
+                                    <constraint firstAttribute="width" secondItem="lij-0T-Bub" secondAttribute="height" multiplier="15:7" constant="40" id="U6g-dV-GXk"/>
+                                    <constraint firstAttribute="width" constant="115" id="tph-iL-g5W"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="2" height="0.0"/>
-                                <state key="normal" title="PLAY">
+                                <state key="normal" title="New Game">
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -247,7 +244,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.87810605872596703" green="1" blue="0.94522996014538518" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hz3-6J-zxH" firstAttribute="centerX" secondItem="lij-0T-Bub" secondAttribute="centerX" id="JS0-kj-JEO"/>
+                            <constraint firstItem="hz3-6J-zxH" firstAttribute="centerX" secondItem="lij-0T-Bub" secondAttribute="centerX" constant="-2" id="JS0-kj-JEO"/>
                             <constraint firstItem="Ly4-dl-k4I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="N4Y-Pg-4cM"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lij-0T-Bub" secondAttribute="bottom" constant="280" id="NMM-bL-Kjj"/>
                             <constraint firstItem="hz3-6J-zxH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SmH-09-liu"/>
