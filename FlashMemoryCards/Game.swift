@@ -23,26 +23,40 @@ struct Game {
     
     
     var unmatchedCardsRevealed: [Int] = []
+    var cardsRemaining: [Int] = []
     
     mutating func flipCard(atIndexnumber index: Int) -> Bool {
         
         if waitingForHidingCards {return false}
         if !unmatchedCardsRevealed.isEmpty && unmatchedCardsRevealed[0] == index {return false}
+        if !cardsRemaining.contains(index) {return false}
+        
         if unmatchedCardsRevealed.count < 2 {
             unmatchedCardsRevealed.append(index)
+             playRevealSound()
             
             if unmatchedCardsRevealed.count == 2 {
                 let card1Name = deckOfCards.dealtCards[unmatchedCardsRevealed[0]]
                 let card2Name = deckOfCards.dealtCards[unmatchedCardsRevealed[1]]
                 
                 if card1Name == card2Name { //2nd card is a match
+                    
+                    for (indexCounter, cardIndexValue) in cardsRemaining.enumerated().reversed() {
+                        if cardIndexValue == unmatchedCardsRevealed[0] || cardIndexValue == unmatchedCardsRevealed[1]{
+                            cardsRemaining.remove(at: indexCounter)
+                        }
+                    }
                     self.speakCard(number: index)
                     unmatchedCardsRevealed.removeAll()
+                    
+                    if cardsRemaining.isEmpty {
+                        playGameOverSound()
+                    }
                 } else {                    //2nd card is not a match
                     resetUnmatchedCards()
                 }
             }
-            playRevealSound()
+           
             
             return true
         } else {
@@ -55,6 +69,9 @@ struct Game {
     mutating func newGame() {
         playShuffleSound()
         deckOfCards.drawCards()
+        for (index,_) in deckOfCards.dealtCards.enumerated() {
+            cardsRemaining.append(index)
+        }
     }
     
     mutating func resetUnmatchedCards() {
@@ -62,7 +79,14 @@ struct Game {
         self.gameDelegate?.game(self, hideCards: unmatchedCardsRevealed)
         unmatchedCardsRevealed.removeAll()
     }
-    //MARK: - Sound Methods
+    //MARK: - Sound Method
+    mutating func playGameOverSound() {
+        let path = Bundle.main.path(forResource: "complete", ofType: "mp3")
+        playSound(withPath: path!)
+    }
+    
+    
+    
     mutating func playRevealSound() {
         let path = Bundle.main.path(forResource: "card-flip", ofType: "mp3")
         playSound(withPath: path!)

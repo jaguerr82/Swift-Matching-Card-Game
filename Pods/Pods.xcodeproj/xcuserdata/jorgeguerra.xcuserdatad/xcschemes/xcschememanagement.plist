@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MZTimerLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>PMSuperButton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,6 +27,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0A2E50C24B03143F1418B06D739A8001</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4C69BF3EF4CE81852226B9442B0C2DF4</key>
 		<dict>
 			<key>primary</key>
@@ -32,7 +42,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BDA98F32A42F62AFAECB3FAE9925DFE9</key>
+		<key>65431016E84623F119912493BCF3E612</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -8,6 +8,8 @@
 
 import UIKit
 import LTMorphingLabel
+import MZTimerLabel
+
 
 class GameViewController: UIViewController, MatchingGameDelegate {
     @IBOutlet weak var practiceMorphLabel: LTMorphingLabel!
@@ -16,10 +18,16 @@ class GameViewController: UIViewController, MatchingGameDelegate {
     var counter = 1
     var game = Game()
     var gameNumber = 1
+    var stopwatch: MZTimerLabel!
     
+    @IBOutlet weak var timerLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        game.newGame()  
+        stopwatch = MZTimerLabel.init(label: timerLabel)
+        stopwatch.timeFormat = "mm:ss"
+        stopwatch?.start()
         game.gameDelegate = self
         practiceMorphLabel.morphingEffect = .burn
     }
@@ -32,6 +40,9 @@ class GameViewController: UIViewController, MatchingGameDelegate {
             UIView.transition(with: sender, duration: 0.5, options: .transitionFlipFromTop, animations: {
                 sender.setImage(thisImage, for: .normal)
             }, completion: nil)
+            if game.cardsRemaining.isEmpty {
+                displayGameOver()
+            }
         }
     }
     
@@ -49,7 +60,14 @@ class GameViewController: UIViewController, MatchingGameDelegate {
         practiceMorphLabel.text = "Game #\(gameNumber)"
         
         game.newGame()
+        stopwatch.reset()
+        stopwatch.start()
         
+    }
+    
+    func displayGameOver() {
+        practiceMorphLabel.text = "Game Over!"
+        stopwatch.pause()
     }
     
     func game(_ game: Game, hideCards cards: [Int]) {

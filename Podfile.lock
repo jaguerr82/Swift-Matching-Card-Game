@@ -1,15 +1,18 @@
 PODS:
   - LTMorphingLabel (0.5.0)
+  - MZTimerLabel (0.5.4)
   - PMSuperButton (1.0.0)
 
 DEPENDENCIES:
   - LTMorphingLabel (~> 0.5)
+  - MZTimerLabel (~> 0.5)
   - PMSuperButton (~> 1.0)
 
 SPEC CHECKSUMS:
   LTMorphingLabel: bc170be74b219b7dae0e5543a44676d16da70ff7
+  MZTimerLabel: cd9bfb9304540ef2a9e163384fca9c978f0dbf83
   PMSuperButton: e107f6817c0e001155af6cfce24da6a708cd8215
 
-PODFILE CHECKSUM: 80baf4dd29a4544d7b06f54e0f1d99b1b9a198ec
+PODFILE CHECKSUM: 05334f3f9e7ed3ecb182c0cd556819f276205e77
 
 COCOAPODS: 1.2.1

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5364B5A1F39472A00382F0D /* complete.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5364B591F39472A00382F0D /* complete.mp3 */; };
 		D5797BCA1F2AC4B70052BCB3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5797BC91F2AC4B70052BCB3 /* Default-568h@2x.png */; };
 		D5797BCC1F2AC6D70052BCB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5797BCB1F2AC6D70052BCB3 /* Assets.xcassets */; };
 		D5A616821F3171AE00F24D97 /* card-flip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5A616811F3171AE00F24D97 /* card-flip.mp3 */; };
@@ -25,6 +26,7 @@
 		1CED802E663444B98060BC6E /* Pods-FlashMemoryCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashMemoryCards.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlashMemoryCards/Pods-FlashMemoryCards.release.xcconfig"; sourceTree = "<group>"; };
 		57FA1C7203A646C5E54BF46C /* Pods_FlashMemoryCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashMemoryCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F37EC64D69B4378F59F1A5 /* Pods-FlashMemoryCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashMemoryCards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlashMemoryCards/Pods-FlashMemoryCards.debug.xcconfig"; sourceTree = "<group>"; };
+		D5364B591F39472A00382F0D /* complete.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = complete.mp3; sourceTree = "<group>"; };
 		D5797BC91F2AC4B70052BCB3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D5797BCB1F2AC6D70052BCB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5A616811F3171AE00F24D97 /* card-flip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "card-flip.mp3"; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				D5797BCB1F2AC6D70052BCB3 /* Assets.xcassets */,
 				D5A616811F3171AE00F24D97 /* card-flip.mp3 */,
 				D5A616831F3171B900F24D97 /* shuffle.wav */,
+				D5364B591F39472A00382F0D /* complete.mp3 */,
 				D5BD0E681F1D971400D942F1 /* AppDelegate.swift */,
 				D5BD0E6A1F1D971400D942F1 /* GameViewController.swift */,
 				D5BD0E6C1F1D971400D942F1 /* Main.storyboard */,
@@ -183,6 +186,7 @@
 				D5797BCC1F2AC6D70052BCB3 /* Assets.xcassets in Resources */,
 				D5BD0E6E1F1D971400D942F1 /* Main.storyboard in Resources */,
 				D5A616821F3171AE00F24D97 /* card-flip.mp3 in Resources */,
+				D5364B5A1F39472A00382F0D /* complete.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
