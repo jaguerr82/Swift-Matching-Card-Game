@@ -153,7 +153,7 @@
 					D5BD0E641F1D971400D942F1 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = V9RP29T5PX;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -378,8 +378,10 @@
 				INFOPLIST_FILE = FlashMemoryCards/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mediatech.jorge.FlashMemoryCards;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.mediatech.jorge.AsiaFlashMatchingCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c907dcd4-b447-4c62-a5c6-9fe86b3cd8ec";
+				PROVISIONING_PROFILE_SPECIFIER = "MatchingAsianCountries-Development";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -388,12 +390,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1CED802E663444B98060BC6E /* Pods-FlashMemoryCards.release.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = V9RP29T5PX;
 				INFOPLIST_FILE = FlashMemoryCards/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mediatech.jorge.FlashMemoryCards;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.mediatech.jorge.AsiaFlashMatchingCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "63464b78-1830-4dc3-92a1-2ec2a81f1656";
+				PROVISIONING_PROFILE_SPECIFIER = "MatchingAsianCountries-Distribution";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
